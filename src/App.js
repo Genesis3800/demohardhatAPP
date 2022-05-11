@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { ethers } from "ethers";
+import "./index.css"
 
 function App() {
   const [depositValue, setDepositValue] = useState(0);
@@ -107,6 +108,7 @@ function App() {
   }
 
   return (
+    <>
     <div className="container">
       <div className="row mt-5">
 
@@ -135,7 +137,13 @@ function App() {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+      <div className="row mt-5 customstyle">
+      <a href="https://github.com/Genesis3800/demohardhatAPP.git">Github repository</a>
+      </div>
+
+      </>
+      
   );
 }
 
